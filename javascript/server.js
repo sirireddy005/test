@@ -1,6 +1,8 @@
-const express = require('express');
-const app = express();
-app.get('/user', (req, res) => {
-  res.send("User data");
-});
-app.listen(3000);
+
+function getUser(user) {
+    return user.profile.name;
+}
+
+console.log(getUser(null));
+
+module.exports = getUser;
