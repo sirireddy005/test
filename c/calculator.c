@@ -1,6 +1,11 @@
+
 #include <stdio.h>
+
+int divide(int a, int b) {
+    return a / b;
+}
+
 int main() {
-    int a = 10, b = 0;
-    printf("%d", a / b);
+    printf("Result: %d\n", divide(10, 0));
     return 0;
 }
